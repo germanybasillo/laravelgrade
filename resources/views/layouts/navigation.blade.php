@@ -29,8 +29,8 @@
                     <x-slot name="trigger">
                         <button
                             class="flex items-center text-sm font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300">
-                            <div>{{ Auth::user()->name }}</div>
-
+                            <div>{{ Auth::user()->name }}</div>&nbsp;
+                            &nbsp;<div>({{ Auth::user()->user_type }})</div>
                             <div class="ml-1">
                                 <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20">
@@ -46,7 +46,6 @@
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-
                             <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
@@ -85,6 +84,7 @@
             <div class="px-4">
                 <div class="text-base font-medium text-gray-800">{{ Auth::user()->name }}</div>
                 <div class="text-sm font-medium text-gray-500">{{ Auth::user()->email }}</div>
+                <div class="text-sm font-medium text-gray-500">{{ Auth::user()->user_type }}</div>
             </div>
 
             <div class="mt-3 space-y-1">
