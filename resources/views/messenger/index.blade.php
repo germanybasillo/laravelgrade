@@ -30,6 +30,9 @@
                                     <th
                                         class="px-3 py-3 text-xs font-normal text-left text-gray-500 uppercase align-middle">
                                         Subject</th>
+                                        <th
+                                        class="px-3 py-3 text-xs font-normal text-left text-gray-500 uppercase align-middle">
+                                        User_type</th>
                                     <th
                                         class="px-3 py-3 text-xs font-normal text-left text-gray-500 uppercase align-middle">
                                     </th>
