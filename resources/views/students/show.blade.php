@@ -1,59 +1,15 @@
-<style>
-  .container {
-  width: 50%;
-  margin-left: 30%;
-}
-
-.card-header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.table {
-  width: 100%;
-}
-
-.table th,
-.table td {
-  padding: 10px;
-}
-
-.btn {
-  padding: 5px 10px;
-  margin-right: 5px;
-}
-
-.btn-success {
-  background-color: #28a745;
-  color: #fff;
-}
-
-.btn-info {
-  background-color: #17a2b8;
-  color: #fff;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.btn-danger {
-  background-color: #dc3545;
-  color: #fff;
-}
-
-.btn-sm {
-  font-size: 12px;
-}
-</style>
- 
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="path/to/your/custom.css" rel="stylesheet">
+</head>
+<body>
 <div class="card" style="width: 50%; margin-left: 30%">
   <div class="card-header">Students Page</div>
   <a class="btn btn-primary" href="javascript:history.go(-1)">Back</a>
@@ -71,3 +27,7 @@
   
   </div>
 </div>
+    <!-- Bootstrap JS (optional, if needed) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
