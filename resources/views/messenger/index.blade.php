@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-span-9">
                             <table class="min-w-full leading-normal">
-                                <thead class="border-b bg-gray-50">
+                                <thead class="border-b bg-gray-50">    
                                     <th
                                         class="px-3 py-3 text-xs font-normal text-left text-gray-500 uppercase align-middle">
                                         Sender</th>

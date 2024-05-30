@@ -13,7 +13,7 @@
                         <div class="space-y-4">
                             @foreach ($thread->messages as $message)
                                 <div class="px-4 py-2 leading-relaxed border rounded-lg sm:px-6 sm:py-4">
-                                    <strong>{{ $message->user->name }}</strong>
+                                    <strong>{{ $message->user->name }} - {{ $message->user->user_type }}</strong>
                                     <span class="text-xs text-gray-400">{{ $message->created_at->diffForHumans() }}
                                     </span>
                                     <p class="text-sm">
