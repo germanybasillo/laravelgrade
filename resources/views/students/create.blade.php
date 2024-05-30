@@ -4,13 +4,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="path/to/your/custom.css" rel="stylesheet">
-
+<br><br><br><br><br><br><br><br><br>
 <div class="card" style="width: 50%; margin-left: 30%">
-  <div class="card-header">Admin Page</div>
+  <div class="card-header">Teacher Panil</div>
   <a class="btn btn-primary" href="javascript:history.go(-1)">Back</a>
   <div class="card-body">
       
-      <form action="{{ url('student') }}" method="post">
+      <form action="{{ url('students') }}" method="post">
         {!! csrf_field() !!}
         <label>Name</label></br>
         <input type="text" name="name" id="name" class="form-control" ></br>

@@ -22,7 +22,7 @@ class StudentController extends Controller
     {
         $input = $request->all();
         Student::create($input);
-        return redirect('student')->with('flash_message', 'Student Addedd!');
+        return redirect('students')->with('flash_message', 'Student Addedd!');
     }
     public function show(string $id): View
     {
@@ -39,12 +39,12 @@ class StudentController extends Controller
         $student = Student::find($id);
         $input = $request->all();
         $student->update($input);
-        return redirect('student')->with('flash_message', 'student Updated!');  
+        return redirect('students')->with('flash_message', 'student Updated!');  
     }
     
     public function destroy(string $id): RedirectResponse
     {
         Student::destroy($id);
-        return redirect('student')->with('flash_message', 'Student deleted!'); 
+        return redirect('students')->with('flash_message', 'Student deleted!'); 
     }
 }
