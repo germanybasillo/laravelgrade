@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessagesController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,5 +31,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'messages', 'as' => 'messages'
     Route::put('{thread}', [MessagesController::class, 'update'])->name('.update');
     Route::delete('{thread}', [MessagesController::class, 'destroy'])->name('.destroy');
 });
+
+Route::resource("/student", StudentController::class);
 
 require __DIR__.'/auth.php';
