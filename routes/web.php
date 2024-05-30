@@ -32,6 +32,6 @@ Route::group(['middleware' => 'auth', 'prefix' => 'messages', 'as' => 'messages'
     Route::delete('{thread}', [MessagesController::class, 'destroy'])->name('.destroy');
 });
 
-Route::resource("/student", StudentController::class);
+Route::resource('students', StudentController::class);
 
 require __DIR__.'/auth.php';
